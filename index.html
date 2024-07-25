@@ -46,6 +46,14 @@ $(document).ready(function()
 <div class="col-1">
 <div id="wb_Image1" style="display:inline-block;width:205px;height:205px;z-index:1;">
 <img src="images/photo_2024-06-16_23-59-59.jpg" id="Image1" alt="" width="205" height="205">function handleClick() {
+    if (navigator.vibrate) {
+        navigator.vibrate(100);
+    }
+}
+
+// Пример привязки функции к элементу
+const button = document.getElementById('Image1');
+button.addEventListener('click', handleClick);
 </div>
 </div>
 </div>
@@ -76,7 +84,6 @@ $(document).ready(function()
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клики</title>
 	<link href="tap.css" rel="stylesheet">
-	<script src="vibrate.js"></script>
     </head>
 <body style="text-align: center;">
 
@@ -173,15 +180,29 @@ var timer = setInterval(function()
 <li>
 <a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-paint-brush overlay-icon"></i>Скины</a>
 <ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Стоячий&nbsp;Максим&nbsp;[Free]</a></li>
-</ul>
-</li>
+<li><a role="menuitem" href="./images/photo_8_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_8_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Reset&nbsp;to&nbsp;default</a></li>
+<li><a role="menuitem" href="./images/lvl1.jpg" onclick="SetImage('Image1','images/lvl1.jpg');return false;" class="OverlayMenu1-effect">Стоячий&nbsp;Максим</a></li>
+<li><a role="menuitem" href="./images/Аннотация 2024-07-18 125853.png" onclick="SetImage('Image1','images/Аннотация 2024-07-18 125853.png');return false;" class="OverlayMenu1-effect">Жид</a></li>
+<li><a role="menuitem" href="./images/photo_11_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_11_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Педик&nbsp;в&nbsp;куртке</a></li>
+<li><a role="menuitem" href="./images/photo_1_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_1_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Сiкма</a></li>
+<li><a role="menuitem" href="./images/photo_10_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_10_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Роберт&nbsp;манки</a></li>
+<li><a role="menuitem" href="./images/photo_9_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_9_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">СВО&nbsp;style</a></li>
+<li><a role="menuitem" href="./images/photo_3_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_3_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Любящие&nbsp;супруги</a></li>
+<li><a role="menuitem" href="./images/photo_4_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_4_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Эдгар</a></li>
+<li><a role="menuitem" href="./images/photo_12_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_12_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Черный&nbsp;юмор</a></li>
+<li><a role="menuitem" href="./images/photo_5_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_5_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Выбрала&nbsp;медведя</a></li>
+<li><a role="menuitem" href="./images/photo_13_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_13_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Сырный&nbsp;смурф</a></li>
+<li><a role="menuitem" href="./images/photo_14_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_14_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Кiт</a></li>
+<li><a role="menuitem" href="./images/photo_2_2024-07-25_10-17-56.jpg" onclick="SetImage('Image1','images/photo_2_2024-07-25_10-17-56.jpg');return false;" class="OverlayMenu1-effect">Фанат&nbsp;Магической&nbsp;Битвы&nbsp;и&nbsp;Годжо&nbsp;Сатору</a></li>
 <li>
-<a role="menuitem" href="#" class="OverlayMenu1-effect"><i class="fa fa-dollar overlay-icon"></i>Вывод&nbsp;$MXTC</a>
+<a role="menuitem" href="#" class="OverlayMenu1-effect">Легендарные&nbsp;скины</a>
 <ul class="drilldown-submenu" role="menu">
-<li><a role="menuitem" href="https://youtu.be/SH_aBd_WgEw?si=cv2eVNRGkIkcy_Ln" class="OverlayMenu1-effect"><i class="fa fa-hand-peace-o overlay-icon"></i>нахуй&nbsp;пошел</a></li>
+<li><a role="menuitem" href="file://" onclick="SetImage('Image1','images/chrome_1cfkaX3ncz.png');return false;" class="OverlayMenu1-effect">РПГ&nbsp;Максима&nbsp;(откроется&nbsp;за&nbsp;469&nbsp;рублей&nbsp;мне&nbsp;на&nbsp;сбербанк&nbsp;ок&nbsp;да?)</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a role="menuitem" href="./withdraw.html" class="OverlayMenu1-effect"><i class="fa fa-dollar overlay-icon"></i>Вывод&nbsp;$MXTC</a></li>
    </ul>
 </div>
 <a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
